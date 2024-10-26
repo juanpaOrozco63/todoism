@@ -53,7 +53,7 @@ jobs:
       - name: Run Playwright tests
         run: |
           cd todo-ism-playwright
-          npx playwright test todo.spec.ts
+          npx playwright test todo.spec.ts --trace on
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
